@@ -22,7 +22,7 @@ soup = BeautifulSoup(get_bytes_from_url(url),features="html.parser")
 
 gem=soup.find_all(href=re.compile("story"), class_="")
 #print(gem[29].get_text())
-# this works but how do you split the news healdines
+# this works then we split the news healdines one by one each, I just presented the top 10 parsed news
 
 def get_headlines():
     print('\x1b[5;36;40m'+ "TOP 10 SOCCER HEADLINES RIGHT NOW!"+ '\x1b[0m')
