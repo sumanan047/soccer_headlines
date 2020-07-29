@@ -25,7 +25,7 @@ gem=soup.find_all(href=re.compile("story"), class_="")
 # this works but how do you split the news healdines
 
 def get_headlines():
-    print("TOP 10 SOCCER HEADLINES RIGHT NOW!")
+    print('\x1b[5;36;40m'+ "TOP 10 SOCCER HEADLINES RIGHT NOW!"+ '\x1b[0m')
     for i in range(10):
-        print("Headline",i+1)
-        print(gem[i].get_text())
+        print("\n",i+1)
+        print("\x1b[3;34;40m"+gem[i].get_text()+"\x1b[0m")
